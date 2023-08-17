@@ -5,7 +5,13 @@ VisualStudioVersion = 17.7.33927.210
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetWebApp", "DotnetWebApp\DotnetWebApp.csproj", "{E072775F-02E8-4907-9533-64F508F3AA95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorWebApp", "RazerWebApp\RazorWebApp.csproj", "{F65772D7-57E8-4F37-AF94-C8DAB2123C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorWebApp", "RazerWebApp\RazorWebApp.csproj", "{F65772D7-57E8-4F37-AF94-C8DAB2123C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.DataAccess", "WebApp.DataAccess\WebApp.DataAccess.csproj", "{94D6E1B0-6FB1-4305-B2C9-7F685122194A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Models", "WebApp.Models\WebApp.Models.csproj", "{FE8FE5EF-7814-42D8-A5C3-BF975BABFA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Utility", "WebApp.Utility\WebApp.Utility.csproj", "{83F12CCE-442C-4DCF-BF74-DB5FFC43121F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{F65772D7-57E8-4F37-AF94-C8DAB2123C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F65772D7-57E8-4F37-AF94-C8DAB2123C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F65772D7-57E8-4F37-AF94-C8DAB2123C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D6E1B0-6FB1-4305-B2C9-7F685122194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D6E1B0-6FB1-4305-B2C9-7F685122194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D6E1B0-6FB1-4305-B2C9-7F685122194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D6E1B0-6FB1-4305-B2C9-7F685122194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8FE5EF-7814-42D8-A5C3-BF975BABFA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8FE5EF-7814-42D8-A5C3-BF975BABFA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8FE5EF-7814-42D8-A5C3-BF975BABFA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8FE5EF-7814-42D8-A5C3-BF975BABFA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F12CCE-442C-4DCF-BF74-DB5FFC43121F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F12CCE-442C-4DCF-BF74-DB5FFC43121F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F12CCE-442C-4DCF-BF74-DB5FFC43121F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F12CCE-442C-4DCF-BF74-DB5FFC43121F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
-﻿using DotnetWebApp.Data;
-using DotnetWebApp.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using WebApp.DataAccess.Data;
+using WebApp.Models;
 
 namespace DotnetWebApp.Controllers
 {

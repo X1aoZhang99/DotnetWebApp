@@ -1,7 +1,7 @@
-﻿using DotnetWebApp.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using WebApp.Models;
 
-namespace DotnetWebApp.Data
+namespace WebApp.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
     {
