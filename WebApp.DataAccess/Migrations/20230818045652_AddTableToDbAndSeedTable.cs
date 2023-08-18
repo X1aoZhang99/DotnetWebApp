@@ -7,7 +7,7 @@
 namespace WebApp.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class AddCategoryToDbAndSeedTable : Migration
+    public partial class AddTableToDbAndSeedTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,8 +39,7 @@ namespace WebApp.DataAccess.Migrations
                     { 6, "6", "Thriller" },
                     { 7, "7", "Romance" },
                     { 8, "8", "Westerns" },
-                    { 9, "9", "Dystopian" },
-                    { 10, "10", "Contemporary" }
+                    { 9, "9", "Dystopian" }
                 });
         }
 

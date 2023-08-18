@@ -11,8 +11,8 @@ using WebApp.DataAccess.Data;
 namespace WebApp.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230817194057_AddCategoryToDbAndSeedTable")]
-    partial class AddCategoryToDbAndSeedTable
+    [Migration("20230818045652_AddTableToDbAndSeedTable")]
+    partial class AddTableToDbAndSeedTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -99,12 +99,6 @@ namespace WebApp.DataAccess.Migrations
                             Id = 9,
                             DisplayOrder = "9",
                             Name = "Dystopian"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            DisplayOrder = "10",
-                            Name = "Contemporary"
                         });
                 });
 #pragma warning restore 612, 618
