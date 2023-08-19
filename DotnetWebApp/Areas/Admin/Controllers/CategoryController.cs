@@ -5,6 +5,7 @@ using WebApp.DataAccess.Repository.IRepository;
 
 namespace DotnetWebApp.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
