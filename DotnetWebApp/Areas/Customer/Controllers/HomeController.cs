@@ -35,6 +35,7 @@ namespace DotnetWebApp.Areas.Customer.Controllers
             };
             return View(cart);
         }
+
         [HttpPost]
         [Authorize]
         public IActionResult Details(ShoppingCart shoppingCart)

@@ -52,6 +52,7 @@ namespace DotnetWebApp.Controllers
             }
             return View(categoryFromDb);
         }
+
         [HttpPost]
         public IActionResult Edit(Category obj)
         {
@@ -64,6 +65,7 @@ namespace DotnetWebApp.Controllers
             }
             return View();
         }
+
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -77,6 +79,7 @@ namespace DotnetWebApp.Controllers
             }
             return View(categoryFromDb);
         }
+
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
