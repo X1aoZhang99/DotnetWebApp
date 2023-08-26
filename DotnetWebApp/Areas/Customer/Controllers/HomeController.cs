@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Security.Claims;
 using WebApp.DataAccess.Repository.IRepository;
 using WebApp.Models;
+using WebApp.Utility;
 
 namespace DotnetWebApp.Areas.Customer.Controllers
 {
@@ -52,14 +53,18 @@ namespace DotnetWebApp.Areas.Customer.Controllers
                 //shopping cart exists
                 cartFromDb.Count += shoppingCart.Count;
                 _unitOfWork.ShoppingCart.Update(cartFromDb);
+                _unitOfWork.Save();
+
             }
             else
             {
                 //add cart record
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart,
+                    _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId).Count());
             }
             TempData["Success"] = "Item added to cart successfully";
-            _unitOfWork.Save();
 
             return RedirectToAction(nameof(Index));
         }
