@@ -23,10 +23,6 @@ namespace WebApp.DataAccess.Repository
             var objFromDb = _db.Products.FirstOrDefault(s => s.Id == obj.Id);
             if (objFromDb != null)
             {
-                if (obj.ImageUrl != null)
-                {
-                    objFromDb.ImageUrl = obj.ImageUrl;
-                }
                 objFromDb.Title = obj.Title;
                 objFromDb.ISBN = obj.ISBN;
                 objFromDb.Price = obj.Price;
@@ -36,6 +32,7 @@ namespace WebApp.DataAccess.Repository
                 objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
                 objFromDb.Author = obj.Author;
+                objFromDb.ProductImages = obj.ProductImages;
             }
         }
     }
